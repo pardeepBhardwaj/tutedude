@@ -3,3 +3,6 @@
 venv/
 env/
 ENV/
+
+# inside parent-folder/.gitignore
+git_assignment_code/flask-todo-app/
