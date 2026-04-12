@@ -1,0 +1,8 @@
+# Environments
+.env                 <-- CRITICAL: This hides your MongoDB password
+venv/
+env/
+ENV/
+
+# inside parent-folder/.gitignore
+git_assignment_code/flask-todo-app/
