@@ -3,6 +3,9 @@
 venv/
 env/
 ENV/
+node_modules/
+.vscode/
+__pycache__/
 
 # inside parent-folder/.gitignore
 git_assignment_code/flask-todo-app/

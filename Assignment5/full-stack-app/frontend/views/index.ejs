@@ -1,0 +1,19 @@
+<form id="dataForm">
+    <input type="text" id="name" placeholder="Enter Name" required>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById('dataForm').onsubmit = async (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        // 'backend' matches the service name in docker-compose
+        const response = await fetch('http://localhost:5000/submit', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ name })
+        });
+        const result = await response.json();
+        alert(result.message);
+    };
+</script>
